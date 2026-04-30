@@ -12,6 +12,9 @@
     <link rel="icon" type="image/jpg" href="img/logo.png" />﻿    
     <link rel="stylesheet" href="style.css">
 </head>
+
+
+
 <body>
     <!-- MENU ENCABEZADO   -->
     <div class="contenedor-header">
@@ -36,6 +39,12 @@
                 <i class="fa-solid fa-bars"></i>
 
             </div>
+
+            <div class="idioma">
+                <button onclick="setLanguage('es')">ES</button>
+                <button onclick="setLanguage('en')">EN</button>
+            </div>
+
         </header>
     </div>
 
@@ -58,9 +67,15 @@
     <!-- SECCION SOBRE MI -->
     <section class="sobremi" id="sobremi">
         <div class="contenido-seccion">
-           <h2>Sobre mi</h2>           
+            <h2 data-es="Sobre mí" data-en="About Me">Sobre mí</h2>
+           <!--<h2>Sobre mi</h2>  -->         
            <p><span>Hola, soy Maxi Cifuentes </span>un joven de 26 años me considero una persona hábil con muchas ganas de aprender y conocer nuevas cosas tambien me destaco por mi responsabilidad soy muy analítico enfocado en el crecimiento constante. 
-            Tengo interés por desarrollarme en entornos industriales y en procesos de control. Me gusta avanzar con una mentalidad abierta y proactiva trabajando en equipo..</p>               
+            Tengo interés por desarrollarme en entornos industriales y en procesos de control. Me gusta avanzar con una mentalidad abierta y proactiva trabajando en equipo..</p>
+            
+            <p data-es="Me considero una persona analítica, proactiva y con iniciativa. Me apasiona la automatización industrial, la simulación de procesos y el desarrollo de soluciones tecnológicas eficientes." data-en="I am a proactive and analytical person with strong initiative. I am passionate about industrial automation, process simulation, and developing efficient technological solutions.">
+                Me considero una persona analítica, proactiva y con iniciativa. Me apasiona la automatización industrial, la simulación de procesos y el desarrollo de soluciones tecnológicas eficientes.
+            </p>
+
             <div class="fila">
                 <!-- datos personales -->
                 <div class="col">
