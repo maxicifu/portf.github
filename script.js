@@ -12,6 +12,24 @@ function mostrarOcultarMenu(){
     }
 }
 
+// =======================
+// 🌍 IDIOMA (ES / EN)
+// =======================
+
+function setLanguage(lang) {
+    localStorage.setItem("lang", lang);
+
+    document.querySelectorAll("[data-es]").forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+    });
+}
+
+// Cargar idioma al iniciar
+window.addEventListener("load", () => {
+    const lang = localStorage.getItem("lang") || "es";
+    setLanguage(lang);
+});
+
 function seleccionar(){
     //Oculto el manu una vez que se selecciono la opcion
     document.getElementById("nav").classList = "";
