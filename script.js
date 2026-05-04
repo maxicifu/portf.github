@@ -11,11 +11,7 @@ function mostrarOcultarMenu(){
         menuVisible = true;
     }
 }
-
-// =======================
-// 🌍 IDIOMA (ES / EN)
-// =======================
-
+//IDIOMA
 function setLanguage(lang) {
     localStorage.setItem("lang", lang);
 

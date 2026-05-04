@@ -14,7 +14,7 @@ html{
 .idioma {
     display: flex;
     gap: 5px;
-    margin-left: 10px;
+    margin-left: auto;
 }
 
 .idioma button {
@@ -46,7 +46,7 @@ html{
     max-width: 1100px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     padding: 15px 20px;
 }
@@ -153,10 +153,15 @@ html{
     line-height: 22px;
     margin-bottom: 20px;
 }
-.sobremi .contenido-seccion p span{
+/*.sobremi .contenido-seccion p span{
+    color: #1cb698;
+    font-weight: bold;
+}*/
+.sobremi .contenido-seccion span{
     color: #1cb698;
     font-weight: bold;
 }
+
 .sobremi .fila{
     display: flex;
 }

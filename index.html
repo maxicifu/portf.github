@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
-    <meta name="description" content="Este portfolio pertenece a Maxi Cifuentes el cual detalla sobre su formacion y capacidades" />
+    <meta name="description" content="Este portfolio pertenece a Maxi Cifuentes el cual es una muestra de los proyectos realizados" />
     <link rel="icon" type="image/jpg" href="img/logo.png" />﻿    
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,27 +25,25 @@
             <nav id="nav">
                 <ul>
                     <li>
-                        <a href="#inicio" onclick="seleccionar()">INICIO</a>
+                        <a href="#inicio" onclick="seleccionar()" data-es="INICIO" data-en="HOME">INICIO</a>
                     </li>
                     <li>
-                        <a href="#sobremi" onclick="seleccionar()">SOBRE MI</a>
+                        <a href="#sobremi" onclick="seleccionar()" data-es="SOBRE MI" data-en="ABOUT ME">SOBRE MI</a>
                     </li>             
                     <li>
-                        <a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a>
-                    </li>                   
+                        <a href="#portfolio" onclick="seleccionar()" data-es="PORTAFOLIO" data-en="PORTFOLIO">PORTAFOLIO</a>
+                    </li>                                    
                 </ul>
             </nav>
+            <div class="idioma">
+                <button onclick="setLanguage('es')">ESP</button>  
+                <button onclick="setLanguage('en')">ENG</button>                              
+            </div>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
-
-            </div>
-
-            <div class="idioma">
-                <button onclick="setLanguage('es')">ES</button>
-                <button onclick="setLanguage('en')">EN</button>
-            </div>
-
-        </header>
+            </div>         
+            
+        </header>        
     </div>
 
     <!-- SECCION INICIO   -->
@@ -55,8 +53,8 @@
                 <img src="img/perfil2.jpg" alt="Perfil de Maxi">
            </div>     
            <h1>MAXIMILIANO CIFUENTES</h1>
-           <h2>Tec. en Mecatronica</h2>
-           <h2>Lic. Automatizacion y control</h2>
+           <h2 data-es="Tecnico en Mecatronica" data-en="Mechatronics Technician">Tecnico en Mecatronica</h2>    
+           <h2 data-es="Lic. Automatizacion y control" data-en="Bachelor’s Degree in Automation and Control">Lic. Automatizacion y control</h2>         
            <div class="redes">                
                 <a target="_blank" href="https://www.linkedin.com/in/maximiliano-cifuentes-90028521b/" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
                 <a target="_blank" href="https://www.youtube.com/@aumacsmart" title="Youtube"><i class="fa-brands fa-youtube"></i></a>            
@@ -67,35 +65,41 @@
     <!-- SECCION SOBRE MI -->
     <section class="sobremi" id="sobremi">
         <div class="contenido-seccion">
-            <h2 data-es="Sobre mí" data-en="About Me">Sobre mí</h2>
-           <!--<h2>Sobre mi</h2>  -->         
-           <p><span>Hola, soy Maxi Cifuentes </span>un joven de 26 años me considero una persona hábil con muchas ganas de aprender y conocer nuevas cosas tambien me destaco por mi responsabilidad soy muy analítico enfocado en el crecimiento constante. 
-            Tengo interés por desarrollarme en entornos industriales y en procesos de control. Me gusta avanzar con una mentalidad abierta y proactiva trabajando en equipo..</p>
-            
-            <p data-es="Me considero una persona analítica, proactiva y con iniciativa. Me apasiona la automatización industrial, la simulación de procesos y el desarrollo de soluciones tecnológicas eficientes." data-en="I am a proactive and analytical person with strong initiative. I am passionate about industrial automation, process simulation, and developing efficient technological solutions.">
-                Me considero una persona analítica, proactiva y con iniciativa. Me apasiona la automatización industrial, la simulación de procesos y el desarrollo de soluciones tecnológicas eficientes.
-            </p>
+           <h2 data-es="Sobre mí" data-en="About Me">Sobre mí</h2>              
+                <p data-es="Hola, soy Maxi Cifuentes. Soy un profesional en automatización y control con experiencia en entornos industriales, habiendo trabajado en áreas de producción, mantenimiento y oficina técnica. Esta experiencia me permitió desarrollar una visión integral de los procesos y adaptarme a distintos contextos de trabajo."
+                   data-en="Hello, I'm Maxi Cifuentes. I am a professional in automation and control with experience in industrial environments, having worked in production, maintenance, and technical office areas. This experience has allowed me to develop a comprehensive understanding of industrial processes and adapt to different work contexts."                >
+                   Hola, soy Maxi Cifuentes. Soy un profesional en automatización y control con experiencia en entornos industriales, habiendo trabajado en áreas de producción, mantenimiento y oficina técnica. Esta experiencia me permitió desarrollar una visión integral de los procesos y adaptarme a distintos contextos de trabajo.
+                </p>
+
+                <p data-es="Me considero una persona analítica, proactiva y con iniciativa, con una fuerte orientación al aprendizaje continuo. Disfruto enfrentar nuevos desafíos, trabajar en equipo y generar un buen ambiente laboral."
+                   data-en="I consider myself an analytical and proactive person with strong initiative, with a strong focus on continuous learning. I enjoy taking on new challenges, working as part of a team, and contributing to a positive work environment.">
+                   Me considero una persona analítica, proactiva y con iniciativa, con una fuerte orientación al aprendizaje continuo. Disfruto enfrentar nuevos desafíos, trabajar en equipo y generar un buen ambiente laboral.
+                </p>
+
+                <p data-es="Me interesa desarrollarme en el ámbito de la automatización industrial y los procesos de control, aportando soluciones prácticas y eficientes, y generando valor en cada proyecto en el que participo."
+                   data-en="I am interested in developing my career in industrial automation and control processes, contributing practical and efficient solutions while adding value to every project I am involved in.">
+                   Me interesa desarrollarme en el ámbito de la automatización industrial y los procesos de control, aportando soluciones prácticas y eficientes, y generando valor en cada proyecto en el que participo.
+                </p>
 
             <div class="fila">
                 <!-- datos personales -->
                 <div class="col">
-                    <h3>Datos personales</h3>
+                    <h3 data-es="Datos personales" data-en="Personal data">Datos personales</h3>
                     <ul>                        
                         <li>
-                            <strong>E-mail:</strong>
+                            <strong data-es="Direccion e-mail" data-en="E-mail address">Direccion e-mail:</strong>
                             maxicifuentes01@gmail.com
                         </li>
                         <li>
-                            <strong>Telefono:</strong>
-                            +543517882021
-                        </li>
-                                     
+                            <strong data-es="Telefono" data-en="Phone number">Telefono:</strong>
+                            +5493517882021
+                        </li>                                     
                     </ul>                                
             </div>
             
             <a href="https://drive.google.com/file/d/1nFIulSFGS3TjtB22V03b5r_OeYyYm8E-/view?usp=drive_link">
             <button>
-                Descargar CV <i class="fa-solid fa-download"></i> 
+                Download CV <i class="fa-solid fa-download"></i> 
                 <span class="overlay"></span>             
             </button> 
             </a>   
@@ -105,76 +109,76 @@
     <!-- SECCION PORTFOLIO -->
     <section class="portfolio" id="portfolio">
         <div class="contenido-seccion">
-            <h2>Portfolio</h2>
+            <h2 data-es="Portafolio" data-en="Portfolio">Portafolio</h2>
             <div class="galeria">
                 <div class="proyecto">                     
                     <iframe width="315" height="560" src="https://www.youtube.com/embed/PT-TbXj1K-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
                     <div class="overlay">
-                        <h3>Proceso de fabricacion</h3>
-                        <p>Maquina Fresadora Router CNC STK</p>
+                        <h3 data-es="Proceso de fabricacion" data-en="Manufacturing process">Proceso de fabricacion</h3>
+                        <p data-es="Maquina Fresadora Router CNC STK" data-en="STK CNC Router Milling Machine">Maquina Fresadora Router CNC STK</p>
                     </div>                    
                 </div>          
                 <div class="proyecto">                     
                     <iframe width="315" height="560" src="https://www.youtube.com/embed/vREKd0-IFJI?si=CXOIFPuJYSUP6IGj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
                     <div class="overlay">
-                        <h3>Proceso de fabricacion</h3>
-                        <p>Maquina Impresora laser de metal EOS M100</p>
+                        <h3 data-es="Proceso de fabricacion" data-en="Manufacturing process">Proceso de fabricacion</h3>
+                        <p data-es="Maquina Impresora laser de metal EOS M100" data-en="EOS M100 Metal Laser Printing Machine">Maquina Impresora laser de metal EOS M100</p>
                     </div>                    
                 </div>     
                 <div class="proyecto">               
                     <img width="315" height="560" src="img/mantenimiento.png" alt="Imagen">
                     <div class="overlay">
-                        <h3>Mantenimiento correctivo</h3>
-                        <p>Maquina fresadora CNC de zirconio</p>
+                        <h3 data-es="Mantenimiento correctivo" data-en="Corrective maintenance">Mantenimiento correctivo</h3>
+                        <p data-es="Maquina fresadora CNC de zirconio" data-en="Zirconium CNC milling machine">Maquina fresadora CNC de zirconio</p>
                     </div>                    
                 </div>  
                 <div class="proyecto">    
                     <iframe width="315" height="560" src="https://www.youtube.com/embed/L9-7Al3NuHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <div class="overlay">
-                        <h3>Sometiendo sensor de temperatura NTC</h3>
-                        <p>Sensor NTC y ESP32</p>
+                        <h3 data-es="Prueba de sensor de temperatura NTC" data-en="NTC temperature sensor testing">Prueba de sensor de temperatura NTC</h3>
+                        <p data-es="Sensor NTC y ESP32" data-en="NTC sensor and ESP32">Sensor NTC y ESP32</p>
                     </div>                    
                 </div>      
                 <div class="proyecto">    
                     <iframe width="315" height="560" src="https://www.youtube.com/embed/8T4g1ZxG5OA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <div class="overlay">
-                        <h3>Sensor de temperatura NTC funcionamiento</h3>
-                        <p>Sensor NTC, ESP32, Labview</p>
+                        <h3 data-es="Funcionamiento del sensor de temperatura NTC" data-en="NTC temperature sensor operation">Funcionamiento del sensor de temperatura NTC</h3>
+                        <p data-es="Sensor NTC, ESP32 y LabVIEW" data-en="NTC sensor, ESP32 and LabVIEW">Sensor NTC, ESP32 y LabVIEW</p>
                     </div>                    
                 </div>  
                 <div class="proyecto">    
                     <iframe width="315" height="560" src="https://youtube.com/embed/cq-jYKzGj90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <div class="overlay">
-                        <h3>Maquina embotelladora con control e interfaz web</h3>
-                        <p>Sensor FC-51, ESP32</p>
+                        <h3 data-es="Máquina embotelladora con control e interfaz web" data-en="Bottling machine with control and web interface">Máquina embotelladora con control e interfaz web</h3>
+                        <p data-es="Sensor FC-51 y ESP32" data-en="FC-51 sensor and ESP32">Sensor FC-51 y ESP32</p>
                     </div>                    
                 </div>                  
                 <div class="proyecto">    
                     <iframe width="315" height="560" src="https://www.youtube.com/embed/un0-uuaJ_Z0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <div class="overlay">
-                        <h3>Ajustando la direccion IP en PLC</h3>
-                        <p>PLC LOGO! Siemens</p>
+                        <h3 data-es="Configuración de dirección IP en PLC" data-en="PLC IP address configuration">Configuración de dirección IP en PLC</h3>
+                        <p data-es="PLC LOGO! Siemens" data-en="Siemens LOGO! PLC">PLC LOGO! Siemens</p>
                     </div>                    
                 </div>    
                 <div class="proyecto">    
                     <iframe width="315" height="560" src="https://www.youtube.com/embed/6yJ0kfnS9XU?si=6DnX248ktotLoJ_y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <div class="overlay">
-                        <h3>Proyecto etiquetadora de cajas</h3>
-                        <p>Tia Portal V17 en VirtualBox</p>
+                        <h3 data-es="Proyecto etiquetadora de cajas" data-en="Box labeling project">Proyecto etiquetadora de cajas</h3>
+                        <p data-es="TIA Portal V17 en VirtualBox" data-en="TIA Portal V17 on VirtualBox">TIA Portal V17 en VirtualBox</p>
                     </div>                    
                 </div>  
                 <div class="proyecto">    
-                    <iframe width="315" height="560" src="https://youtu.be/embed/yi58xn9FJeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="315" height="560" src="https://www.youtube.com/embed/yi58xn9FJeE?si=23_56DpXVnxWg4dk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <div class="overlay">
-                        <h3>Práctica soldadura automatizada con torcha</h3>
-                        <p>RoboDK, Robot ABB IRB 6640</p>
+                        <h3 data-es="Práctica de soldadura automatizada con antorcha" data-en="Automated welding practice with torch">Práctica de soldadura automatizada con antorcha</h3>
+                        <p data-es="RoboDK, Robot ABB IRB 6640" data-en="RoboDK, ABB IRB 6640 robot">RoboDK, Robot ABB IRB 6640</p>
                     </div>                    
                 </div>  
                 <div class="proyecto">    
                     <iframe width="315" height="560" src="https://www.youtube.com/embed/-mO0HMLTCBo?si=uM8D7I2y0N0UIBSm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <div class="overlay">
-                        <h3>Preparacion de impresion 3D</h3>
-                        <p>Ender 3 V2, Fusion 360, Klipper servidor, SSH</p>
+                        <h3 data-es="Preparación de impresión 3D" data-en="3D printing preparation">Preparación de impresión 3D</h3>
+                        <p data-es="Ender 3 V2, Fusion 360, Klipper, servidor y SSH" data-en="Ender 3 V2, Fusion 360, Klipper, server and SSH">Ender 3 V2, Fusion 360, Klipper, servidor y SSH</p>
                     </div>                    
                 </div>              
             </div>
@@ -190,7 +194,7 @@
             <a target="_blank" href="https://www.linkedin.com/in/maximiliano-cifuentes-90028521b/" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
             <a target="_blank" href="https://www.youtube.com/@aumacsmart" title="Youtube"><i class="fa-brands fa-youtube"></i></a>
        </div>
-    <p>En este repositorio se ha utilizado codigos HTML, CSS, JS, MUCHAS GRACIAS :)</p>               
+    <p data-es="En este repositorio se ha utilizado codigos HTML, CSS, JS, MUCHAS GRACIAS :)" data-en="This repository uses HTML, CSS, and JS code. THANK YOU VERY MUCH!">En este repositorio se ha utilizado codigos HTML, CSS, JS, MUCHAS GRACIAS :)</p>               
     </footer>
     
 
